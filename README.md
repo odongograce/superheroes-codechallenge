@@ -1,21 +1,23 @@
 # Superheroes API
 
 ## Description
-A Flask REST API for tracking superheroes and their superpowers.  
-Heroes can have many powers, and powers can belong to many heroes through hero powers.
+A Flask API for managing heroes and their powers.
 
-## Setup Instructions
-
-1. Clone the repository
-2. Install dependencies
-3. Run migrations
-4. Seed the database
-5. Start the server
-
-```bash
+## Setup
 pipenv install
 pipenv shell
 flask db upgrade
 python seed.py
-flask run
+
+## Routes
+GET /heroes
+GET /heroes/:id
+GET /powers
+GET /powers/:id
+PATCH /powers/:id
+POST /hero_powers
+
+## Author
+Grace Odongo
+
 
